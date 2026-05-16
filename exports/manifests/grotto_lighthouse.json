@@ -1,0 +1,19 @@
+{
+  "generated_utc": "2026-05-16T20:18:23.566533Z",
+  "triangle_total_approx_scene": 10264,
+  "triangle_warnings": [
+    {
+      "level": "OVER_PROP_SOFT_CAP",
+      "object": "lighthouse_Railing",
+      "triangles": 1152,
+      "material_slots": 1
+    },
+    {
+      "level": "OVER_PROP_SOFT_CAP",
+      "object": "lighthouse_LampGlow",
+      "triangles": 1024,
+      "material_slots": 1
+    }
+  ],
+  "skinned_material_notes": []
+}
