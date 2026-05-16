@@ -1,0 +1,19 @@
+{
+  "generated_utc": "2026-05-16T01:33:58.713100Z",
+  "triangle_total_approx_scene": 7460,
+  "triangle_warnings": [
+    {
+      "level": "OVER_PROP_SOFT_CAP",
+      "object": "PearlClam_ShellBottom",
+      "triangles": 3324,
+      "material_slots": 1
+    },
+    {
+      "level": "OVER_PROP_SOFT_CAP",
+      "object": "PearlClam_ShellTop",
+      "triangles": 3324,
+      "material_slots": 1
+    }
+  ],
+  "skinned_material_notes": []
+}

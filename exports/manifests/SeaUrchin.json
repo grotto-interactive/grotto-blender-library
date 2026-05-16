@@ -1,0 +1,13 @@
+{
+  "generated_utc": "2026-05-16T01:34:01.884854Z",
+  "triangle_total_approx_scene": 2824,
+  "triangle_warnings": [
+    {
+      "level": "OVER_PROP_SOFT_CAP",
+      "object": "SeaUrchin_Spines",
+      "triangles": 2080,
+      "material_slots": 1
+    }
+  ],
+  "skinned_material_notes": []
+}

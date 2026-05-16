@@ -1,0 +1,13 @@
+{
+  "generated_utc": "2026-05-16T01:33:53.148766Z",
+  "triangle_total_approx_scene": 1548,
+  "triangle_warnings": [
+    {
+      "level": "OVER_PROP_SOFT_CAP",
+      "object": "Firepit_FirepitStoneMat",
+      "triangles": 1152,
+      "material_slots": 1
+    }
+  ],
+  "skinned_material_notes": []
+}

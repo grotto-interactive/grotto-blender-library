@@ -1,0 +1,13 @@
+{
+  "generated_utc": "2026-05-16T01:33:47.917301Z",
+  "triangle_total_approx_scene": 2320,
+  "triangle_warnings": [
+    {
+      "level": "OVER_PROP_SOFT_CAP",
+      "object": "BerryBush_BerryBushBerryMat.001",
+      "triangles": 1960,
+      "material_slots": 1
+    }
+  ],
+  "skinned_material_notes": []
+}

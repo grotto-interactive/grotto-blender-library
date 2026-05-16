@@ -1,0 +1,13 @@
+{
+  "generated_utc": "2026-05-16T01:33:55.522349Z",
+  "triangle_total_approx_scene": 2826,
+  "triangle_warnings": [
+    {
+      "level": "OVER_PROP_SOFT_CAP",
+      "object": "Kelp_GreenMat",
+      "triangles": 2670,
+      "material_slots": 1
+    }
+  ],
+  "skinned_material_notes": []
+}

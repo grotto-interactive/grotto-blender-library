@@ -1,0 +1,43 @@
+{
+  "generated_utc": "2026-05-16T01:34:03.172095Z",
+  "triangle_total_approx_scene": 9157,
+  "triangle_warnings": [
+    {
+      "level": "OVER_PROP_SOFT_CAP",
+      "object": "Wheel_Rim",
+      "triangles": 1152,
+      "material_slots": 1
+    },
+    {
+      "level": "OVER_PROP_SOFT_CAP",
+      "object": "Anchor_Ring",
+      "triangles": 1152,
+      "material_slots": 1
+    },
+    {
+      "level": "OVER_PROP_SOFT_CAP",
+      "object": "Porthole_P_0",
+      "triangles": 1152,
+      "material_slots": 1
+    },
+    {
+      "level": "OVER_PROP_SOFT_CAP",
+      "object": "Porthole_P_1",
+      "triangles": 1152,
+      "material_slots": 1
+    },
+    {
+      "level": "OVER_PROP_SOFT_CAP",
+      "object": "Porthole_S_0",
+      "triangles": 1152,
+      "material_slots": 1
+    },
+    {
+      "level": "OVER_PROP_SOFT_CAP",
+      "object": "Porthole_S_1",
+      "triangles": 1152,
+      "material_slots": 1
+    }
+  ],
+  "skinned_material_notes": []
+}

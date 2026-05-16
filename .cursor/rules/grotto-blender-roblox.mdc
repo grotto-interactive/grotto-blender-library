@@ -1,0 +1,15 @@
+---
+description: Grotto Blender assets — load brain contracts + blender-library scripts
+globs: "**/grotto-blender-library/**"
+alwaysApply: false
+---
+
+# Grotto Blender / Roblox assets
+
+When editing or discussing files under `grotto-blender-library/` (especially `assets/` or `scripts/`):
+
+1. Read `docs/grotto-brain/entries/decisions/roblox-asset-export-contract.md` and `docs/grotto-brain/entries/decisions/fbx-per-material-decomposition.md` via the symlink (`docs/grotto-brain` → sibling repo).
+2. Prefer `scripts/grotto_roblox_pipeline.py` for batch conformance (material split on static meshes, transforms, pivots, FBX axes).
+3. For gameplay integration context, defer to brain entry `seed-harbor-runtime-world-system.md` and the `cozy-grotto-roblox` repo (not duplicated here).
+
+Do not contradict those contracts unless the Brain entry itself is proposed for update.

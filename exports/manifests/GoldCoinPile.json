@@ -1,0 +1,13 @@
+{
+  "generated_utc": "2026-05-16T01:34:08.238718Z",
+  "triangle_total_approx_scene": 1380,
+  "triangle_warnings": [
+    {
+      "level": "OVER_PROP_SOFT_CAP",
+      "object": "GoldCoinPile_CoinMat_pile",
+      "triangles": 1224,
+      "material_slots": 1
+    }
+  ],
+  "skinned_material_notes": []
+}
