@@ -29,6 +29,22 @@ cd /Users/toshahixson/dev/grotto/grotto-blender-library
 
 Set `BLENDER_BIN` if Blender lives somewhere else.
 
+## Publishing — GitHub
+
+**Canonical remote:** [`grotto-interactive/grotto-blender-library`](https://github.com/grotto-interactive/grotto-blender-library) (`https://github.com/grotto-interactive/grotto-blender-library.git`)
+
+The Brain records this repo in `grotto-brain` → `entries/decisions/grotto-blender-source-library.md`.
+
+Create the repo and push **`main`** (from this directory, after `gh auth login`):
+
+```bash
+git remote remove origin 2>/dev/null
+git remote add origin https://github.com/grotto-interactive/grotto-blender-library.git
+gh repo create grotto-interactive/grotto-blender-library --source=. --public --remote=origin --description "Canonical Blender asset tree & Roblox FBX export pipeline for Grotto" --push
+```
+
+If the repo already exists empty in the UI: `git push -u origin main`
+
 ## Limitations (important)
 
 - **Skinned / rigged meshes** are not auto-split by material (would break weights). The manifest flags multi-material rigged assets for manual review.
