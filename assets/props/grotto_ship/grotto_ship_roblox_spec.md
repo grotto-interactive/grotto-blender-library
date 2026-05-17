@@ -105,6 +105,44 @@ All materials use solid colors (no textures). Map these to Roblox `SurfaceAppear
 
 ---
 
+## Interior & Gameplay (R15)
+
+Below-deck **cargo hold** and main **deck walk** volumes were added for avatar movement and item storage.
+
+### New objects
+
+| Object | Role |
+|--------|------|
+| `ship_CargoDeck_Floor` | Walkable cargo deck (use `CanCollide = true`) |
+| `ship_CargoWall_*` | Inner bulkheads (port/stbd/bow/stern) |
+| `ship_CargoDeck_Ceiling` | Deck underside visual |
+| `ship_DeckHatch_Frame` | Hatch rim on `Deck_Main` |
+| `ship_Ladder` | Ladder from hatch to hold |
+| `ship_CargoShelf` / `_02` | Shelf ledges for crate placement |
+| `Ref_Hatch` | Hatch entry point (spawn / teleport) |
+| `Ref_CargoBounds` | Cargo hold volume center (~4.4 × 3.7 × 5.1 studs clear) |
+| `Ref_DeckWalkBounds` | Open main-deck walk footprint |
+
+### Clear dimensions (studs)
+
+| Zone | Size (L × W × H) | Notes |
+|------|------------------|-------|
+| Cargo hold | ~4.4 × 3.7 × **5.1** | Floor z ≈ −3.85, ceiling z ≈ 1.22; R15 can stand |
+| Main deck walk | ~6.2 × 4.7 | z ≈ 1.56; bow/stern decks extend further |
+| Hatch opening | ~1.9 × 1.5 | Center ~(0.35, 0) on `Deck_Main` |
+
+### Studio setup
+
+1. Weld all `ship_*` interior parts to `GROTTO_grotto_ship` (or `GrottoShip` model).
+2. **Cargo floor** `ship_CargoDeck_Floor` — primary walk collision below deck; snap crates to shelves or `Ref_CargoBounds`.
+3. **Hull** `Hull_M_Hull` — if players cannot enter the hold, set `CanCollide = false` on the hull and rely on deck + inner walls, or add invisible exterior collision only.
+4. **Hatch** — align spawn / `ProximityPrompt` to `Ref_Hatch`; ladder is visual; add `TrussPart` or `Part` ladder collision if needed.
+5. **Storage** — parent loot crates to `ship_CargoShelf` attachments or grid inside `Ref_CargoBounds`.
+
+Re-run interior builder: `Blender -b assets/props/grotto_ship/grotto_ship.blend --python scripts/build_grotto_ship_interior.py`
+
+---
+
 ## Roblox Studio Import Notes
 
 1. **Parent all parts under one Model** named `GrottoShip`.
