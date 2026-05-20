@@ -1,6 +1,6 @@
 # Merchant_Shop — Roblox Spec
 
-**Size:** ~9.2 studs wide × 7.0 studs deep × 6.2 studs tall (environment building)
+**Size:** ~9.2 studs wide × 7.0 studs deep × **~8.2 studs tall** (environment building, R15-sized interior)
 **Parts:** 55 mesh objects, 6 colors
 
 ## Colors
@@ -78,6 +78,17 @@
 | Shop_Hinge_T | Top door hinge barrel |
 | Shop_Hinge_B | Bottom door hinge barrel |
 | Shop_Door_Knob | Door handle knob |
+
+## R15 interior (2026 update)
+
+| Check | Value |
+|-------|-------|
+| Door opening width | **2.4 studs** |
+| Floor → wall top (stand height) | **~5.8 studs** |
+| Walk floor | **7.3 × 5.3** studs |
+| Aisle past counter (left) | **~4.6 studs** |
+
+Re-apply sizing: `Blender -b assets/environment/Merchant_Shop/Merchant_Shop.blend --python scripts/fix_merchant_shop_r15.py`
 
 ## Studio Notes
 - Import `Merchant_Shop.fbx` — 55 separate mesh parts
